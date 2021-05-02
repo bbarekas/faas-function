@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://192.168.2.45:31112
+functions:
+  faas-test-api:
+    lang: golang-http
+    handler: ./faas-test-api
+    image: bbarekas/faas-test-api:latest
+
